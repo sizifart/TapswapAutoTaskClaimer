@@ -46,7 +46,7 @@ console.error = console.warn = console.info = console.debug = () => { };
     tapfamily = tapfamily.split("last_name%2522%253A%2522")[1];
     var buttonn = document.createElement("Button");
     buttonn.style.cssText =
-      "BACKGROUND-COLOR: red;top: 0px; right: 0px; position: absolute; z-index: 99999; padding: 3px 2px;";
+      "BACKGROUND-COLOR: red;top: 0px; right: 0px; position: absolute; z-index: 99999; padding: 7px 12px; border-radius: 5px;border: none;color: #fff;background: rgb(62,22,149);background: linear-gradient(63deg, rgb(62, 22, 149) 0%, rgb(94, 61, 166) 100%);font-size: 13px;text-transform: uppercase;";
     buttonn.id = "sizifart";
     buttonn.innerHTML = tapname + " ( " + username + " )";
     document.body.appendChild(buttonn);
