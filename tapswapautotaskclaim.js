@@ -72,7 +72,7 @@ console.error = console.warn = console.info = console.debug = () => { };
       var answers = "NotFound";
       soal = soal.replace("+", "");
       soal = soal.replace("`", "");
-      console.log("Sizif Question : ---" + soal + "---");
+      console.log("Shahan Question : ---" + soal + "---");
     fetch(
   "https://raw.githubusercontent.com/sizifart/TapswapAutoTaskClaimer/main/list.json"
 ).then(function (response) {
@@ -84,10 +84,10 @@ console.error = console.warn = console.info = console.debug = () => { };
 function done() {
   if (storedText) {
     const bigObj = JSON.parse(storedText, (key, value, context) => {
-      if (key === soal) {
+      if (key == soal) {
         storedText = value;
       }
-      return value;
+      return storedText;
     });
           const input = document.evaluate(
             "/html/body/div/div[1]/div[2]/div[3]/div[2]/div/div[3]/div/div/input",
@@ -96,6 +96,9 @@ function done() {
             XPathResult.FIRST_ORDERED_NODE_TYPE,
             null
           ).singleNodeValue;
+     if(storedText.includes("{")){
+          storedText = "";
+      }
           if (input) {
             input.value = storedText;
             const inputEvent = new Event("input", { bubbles: true });
@@ -116,7 +119,7 @@ function done() {
         } else {
           answers = "NotFound";
         }
-        console.log("Sizif Answer : ---" + answers + "---");
+        console.log("Shahan Answer : ---" + answers + "---");
         setTimeout(function () {
           const input = document.querySelector('input[type="string"]');
           if (input) {
