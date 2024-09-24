@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TapswapAutoTaskClaimerClaimer
 // @namespace    https://github.com/sizifart/
-// @version      1.0
+// @version      1.1
 // @description  Auto Claim Tasks TapSwapBot
 // @author       FoadDavoodi
 // @match        https://app.tapswap.club/*
